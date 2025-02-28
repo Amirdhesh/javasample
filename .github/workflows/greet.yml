@@ -13,10 +13,11 @@ env:
   my_name: Amirdhesh
   
 jobs:
-  env:
-    my_name: Gokul c
+  
   greet:
     runs-on: ubuntu-latest
+    env:
+      my_name: Gokul c
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
