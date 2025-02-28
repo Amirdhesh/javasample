@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       my_name: Gokul c
-    enviroment: workout
+    environment: workout
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
