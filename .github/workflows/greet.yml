@@ -13,6 +13,8 @@ env:
   my_name: Amirdhesh
   
 jobs:
+  env:
+    my_name: Gokul c
   greet:
     runs-on: ubuntu-latest
     steps:
@@ -20,6 +22,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: greeting
-        run: echo "Hello, Welcome to github action workflow. ${{my_name}}"
+        run: echo "Hello, Welcome to github action workflow. ${{env.my_name}}"
       
   
