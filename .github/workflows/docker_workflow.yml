@@ -1,0 +1,13 @@
+name: Docker build and push
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v3  
+      - name: build the docker image
+        run:  docker build . --file Dockerfile --tag my-image-name:$(date +%s)
