@@ -1,0 +1,22 @@
+name: Greeting message
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  greet:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: greeting
+      - run : echo "Hello, Welcome to github action workflow."
+      
+  
