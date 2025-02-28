@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the Java source file from host to container
-COPY sample.java .
+COPY Sample.java .
 
 # Compile the Java file
 RUN javac Sample.java
