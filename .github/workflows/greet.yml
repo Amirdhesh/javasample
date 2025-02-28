@@ -17,6 +17,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: greeting
-      - run : echo "Hello, Welcome to github action workflow."
+        run: echo "Hello, Welcome to github action workflow."
       
   
