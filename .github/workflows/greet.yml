@@ -18,11 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       my_name: Gokul c
+    enviroment: workout
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: greeting
-        run: echo "Hello, Welcome to github action workflow. ${{secrets.name}}"
+        run: echo "Hello, Welcome to github action workflow. ${{secrets.my_name}}"
       
   
